@@ -9,20 +9,28 @@
     <script>
         let number1 = Number(prompt("Введите первое число.")); 
         let number2 = Number(prompt("Введите второе число.")); 
-        function sum(number1, number2) { let result = (number1 + number2); 
-            return console.log("Результат: "+number1,'+ '+number2,'= '+result); 
+        function sum(number1, number2) { 
+            let result = (number1 + number2);
+            console.log("Результат: "+number1,'+ '+number2,'= '+result); 
+            return result; 
         } 
         sum(number1,number2); 
-        function subtraction(number1, number2) { let result = number1 - number2; 
-            return console.log("Результат: "+number1, '- '+number2,'= '+result); 
-        } subtraction(number1,number2); 
+        function subtraction(number1, number2) { 
+            let result = number1 - number2; 
+            console.log("Результат: "+number1, '- '+number2,'= '+result);
+            return result; 
+        } 
+        subtraction(number1,number2);
         function multiplication(number1, number2) { 
             let result = number1 * number2; 
-            return console.log("Результат: "+number1, '* '+number2,'= '+result); 
-        } multiplication(number1,number2); 
+            console.log("Результат: "+number1, '* '+number2,'= '+result);
+            return result;
+        } 
+        multiplication(number1,number2);
         function division(number1, number2) { 
             let result = number1 / number2; 
-            return console.log("Результат: "+number1, '/ '+number2,'= '+result); 
+            console.log("Результат: "+number1, '/ '+number2,'= '+result); 
+            return result;
         } 
         division(number1,number2);
     </script>
