@@ -6,7 +6,15 @@ let userSport = prompt("Какой ваш любимый вид спорта?");
 
 let today = new Date();
 let currentYear = today.getFullYear();
-yearOfBorn = yearOfBorn === 0 || isNaN(yearOfBorn) ? ("Жаль, что Вы не захотели ввести свой возраст:(") : (`Ваш возраст ${currentYear - yearOfBorn} года`);
+let years = "лет";
+let yearOfBornStr = String(currentYear - yearOfBorn);
+let lastNumberOfYearBorn = Number(yearOfBornStr[yearOfBornStr.length - 1]);
+
+if (lastNumberOfYearBorn > 0 && lastNumberOfYearBorn <= 4) {
+    years = "года";
+}
+
+yearOfBorn = yearOfBorn === 0 || isNaN(yearOfBorn) ? ("Жаль, что Вы не захотели ввести свой возраст:(") : (`Ваш возраст ${currentYear - yearOfBorn} ${years}`);
 
 switch (userCity) {
     case null:
