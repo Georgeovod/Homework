@@ -28,8 +28,8 @@ a <= 1 && b >= 3 ? console.log(a + b) : console.log(a - b);
 
 (a > 2 && a < 11) || (b >= 6 && b < 14) ? console.log('Верно') : console.log('Неверно');//12
 
-let num;                                                                                //13
-let result;
+let num = null;                                                                                //13
+let result = "";
 switch (num) {
     case 1:
         result = "зима";

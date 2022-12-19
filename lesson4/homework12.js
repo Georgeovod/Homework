@@ -12,7 +12,7 @@ let lastNumberOfYearBorn = Number(yearOfBornStr[yearOfBornStr.length - 1]);
 
 if (lastNumberOfYearBorn > 0 && lastNumberOfYearBorn <= 4) {
     years = "года";
-}
+};
 
 yearOfBorn = yearOfBorn === 0 || isNaN(yearOfBorn) ? ("Жаль, что Вы не захотели ввести свой возраст:(") : (`Ваш возраст ${currentYear - yearOfBorn} ${years}`);
 
