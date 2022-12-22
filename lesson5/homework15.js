@@ -6,7 +6,7 @@ let result = null;
 if (num < 2) {
     result = false;
 }
-for (i = 2; i < num; i++) {
+for (let i = 2; i < num; i++) {
     if (num % i === 0) {
         result = false;
         break;
