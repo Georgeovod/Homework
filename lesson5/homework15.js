@@ -1,3 +1,5 @@
+'use strict'
+
 const num = prompt("Введите число");
 
 let result = null;

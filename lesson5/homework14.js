@@ -1,3 +1,5 @@
+'use strict'
+
 //Task1
 console.log('Од 1 до 100');
 for (i = 1; i <= 100; i++) {
